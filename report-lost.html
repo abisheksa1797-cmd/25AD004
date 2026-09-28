@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report Lost Item</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+
+        .box {
+            width: 400px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #dc2626;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>Report Lost Item</h1>
+
+    <form>
+
+        <label>Item Name</label>
+        <input type="text" placeholder="Example: Mobile Phone" required>
+
+        <label>Category</label>
+
+        <select required>
+            <option value="">Select Category</option>
+            <option>Electronics</option>
+            <option>Books</option>
+            <option>Documents</option>
+            <option>Accessories</option>
+            <option>Other</option>
+        </select>
+
+        <label>Lost Location</label>
+        <input type="text" placeholder="Example: Library" required>
+
+        <label>Date Lost</label>
+        <input type="date" required>
+
+        <label>Description</label>
+        <textarea placeholder="Describe the item"></textarea>
+
+        <button type="submit">Report Lost Item</button>
+
+    </form>
+
+    <br>
+
+    <a href="dashboard.html">Back to Dashboard</a>
+
+</div>
+
+</body>
+</html>

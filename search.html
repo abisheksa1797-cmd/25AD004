@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Items - CampusFind</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+    }
+
+    header {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 80%;
+      margin: 40px auto;
+      text-align: center;
+    }
+
+    input, select {
+      padding: 12px;
+      margin: 5px;
+    }
+
+    button {
+      padding: 12px 20px;
+      background: #1e3a8a;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .item {
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      width: 500px;
+      text-align: left;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px #ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Search Lost & Found Items</h1>
+</header>
+
+<div class="container">
+
+  <input type="text" placeholder="Search item">
+
+  <select>
+    <option>All Categories</option>
+    <option>Electronics</option>
+    <option>Books</option>
+    <option>Documents</option>
+    <option>Accessories</option>
+  </select>
+
+  <button>Search</button>
+
+  <div class="item">
+    <h2>Black Wallet</h2>
+    <p><b>Category:</b> Accessories</p>
+    <p><b>Location:</b> Canteen</p>
+    <p><b>Status:</b> Found</p>
+
+    <button onclick="location.href='item-details.html'">
+      View Details
+    </button>
+  </div>
+
+  <div class="item">
+    <h2>Mobile Phone</h2>
+    <p><b>Category:</b> Electronics</p>
+    <p><b>Location:</b> Library</p>
+    <p><b>Status:</b> Lost</p>
+
+    <button onclick="location.href='item-details.html'">
+      View Details
+    </button>
+  </div>
+
+</div>
+
+</body>
+</html>
